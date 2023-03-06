@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Labrada:wght@100;400&family=Tilt+Warp&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.container{
+    background-image: linear-gradient(rgb(203, 158, 214), rgb(100, 6, 84));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background-color:rgb(218, 159, 226);
+    padding: 20px;
+    border-style: solid ;
+    border-radius: 15px;
+}
+.calculator input{
+    border: 0 ;
+    outline: 0 ;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    background: transparent;
+    font-size: 28px;
+    color: rgb(230, 9, 241);
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, 
+                rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, 
+                rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+}
+.container input.new_font{
+    color: black;
+}
+.calculator .to_show{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 1px;
+}
+.calculator .to_show input{
+    flex: 1;
+    box-shadow: none;
+    font-size: 40px;
+    text-align: right;
+}
+.container input.new_color{
+    color: black;
+}
+.container input.new_color:hover{
+    color: beige;
+    background-color: rgb(100, 6, 84);
+}
+
+.container input.new_bg_color:hover{
+    color: beige;
+    background-color: rgb(161, 81, 182);
+}
