@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+    background-image: linear-gradient(to right,rgb(164, 141, 173),rgb(115, 52, 144),rgb(98, 9, 139), rgb(52, 3, 75));
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+    text-align: center;
+    padding: 1rem;
+	font-size: 3rem;
+	font-weight: 600;
+	color: whitesmoke;
+	margin-bottom: 1rem;
+}
+
+#new-task-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: rgb(40, 2, 40);
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	margin-right: 1rem;
+	color: whitesmoke;
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	color: whitesmoke;
+}
+
+#new-task-submit {
+	color: violet;
+	font-size: 1.9rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(27, 3, 62);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color:whitesmoke;
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: purple;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+    color: violet;
+}
+
+.task .actions .delete {
+    color: red;
+}
